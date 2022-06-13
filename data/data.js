@@ -30,6 +30,17 @@ const EVkosyouhappou = {
 };
 
 
+const EVyobidashihappou = {
+    name: 'EV呼出発報',
+    type: 'select',
+    flow: [
+        ['防災内で発報した場合', bousainaihappouEVyobidashiFlow],
+        ['現地急行の場合（受話器対応での応答がない場合）', EVyobidashiOutouNashiGenchikyuukouFlow],
+        ['現地急行の場合（受話器対応での応答があった場合）', EVyobidashiOutouAriGenchikyuukouFlow]
+    ]
+};
+
+
 const emergencySelection = {
     name: '一覧',
     type: 'select',
@@ -38,7 +49,7 @@ const emergencySelection = {
         ['トイレ呼出発報', toireyobidashihappou],
         ['権利主張お客様対応'],
         ['EV故障発報', EVkosyouhappou],
-        ['EV呼出発報'],
+        ['EV呼出発報', EVyobidashihappou],
         ['ESC緊急停止'],
         ['応急手当'],
         ['地震発生'],

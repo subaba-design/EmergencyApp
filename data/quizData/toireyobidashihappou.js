@@ -9,6 +9,7 @@ const bousainaihappouToireFlow = {
     firstAttention: '防災内、トイレ発報！'
 };
 
+
 const yuusentoireGenchikyuukouFlow = {
     name: '優先トイレ発報、現地急行の場合',
     type: 'quiz',
@@ -23,6 +24,7 @@ const yuusentoireGenchikyuukouFlow = {
     ],
     firstAttention: '優先トイレ発報！現地急行！'
 };
+
 
 const joshitoireGenchikyuukouFlow = {
     name: '女子トイレ発報、現地急行の場合',

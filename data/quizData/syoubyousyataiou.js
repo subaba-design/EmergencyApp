@@ -19,6 +19,7 @@ const genchikyuukouFlow = {
     firstAttention: '傷病者発生！現地急行！'
 };
 
+
 const kurumaisutouwomotteikuFlow = {
     name: '車椅子等を持っていく場合',
     type: 'quiz',
@@ -29,6 +30,7 @@ const kurumaisutouwomotteikuFlow = {
     ],
     firstAttention: '傷病者発生！防災センターから応援へ向かえ！'
 };
+
 
 const kyuukyuuyouseiattendoFlow = {
     name: '救急要請の場合',
