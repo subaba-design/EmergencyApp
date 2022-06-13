@@ -130,7 +130,7 @@ const setNextQuiz = () => {
     } else {
         alert('クイズ終了！！');
         subTitleElement.textContent = ''
-        questionElement.textContent = '';
+        questionElement.innerHTML = '';
         homeSelects();
     }
 };
@@ -142,7 +142,7 @@ const quizAction = () => {
     quizStatus.question = quizStatus.quizData[quizStatus.statusNumber][0];
     quizStatus.answer   = quizStatus.quizData[quizStatus.statusNumber][1];
 
-    questionElement.textContent = 'Q. ' + quizStatus.question;
+    questionElement.innerHTML = 'Q. ' + quizStatus.question;
     answerElement.innerHTML = '';
 
     nextButton.hidden = false;

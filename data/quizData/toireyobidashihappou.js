@@ -6,7 +6,7 @@ const bousainaihappouToireFlow = {
         ['どのボタンを押す？', 'オレンジ色のボタンで停止'],
         ['ボタンを押したら？', '「〇〇（発報場所）です！！」と叫ぶ']
     ],
-    firstAttention: '防災内、優先トイレ発報！'
+    firstAttention: '防災内、トイレ発報！'
 };
 
 const yuusentoireGenchikyuukouFlow = {
