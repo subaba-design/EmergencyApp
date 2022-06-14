@@ -64,6 +64,22 @@ const ESCkinnkyuuteishi = {
 };
 
 
+const oukyuuteate = {
+    name: '応急手当',
+    type: 'select',
+    flow: [
+        ['止血方法', shiketuhouhou],
+        ['擦り傷（出血が少量の浅い傷）', surikizu],
+        ['切り傷（包丁やナイフ、ガラスなどで切った直線的な傷）', kirikizu],
+        ['指の切断', yubinosetudan],
+        ['刺し傷', sashikizu],
+        ['心配蘇生方法', shinpaisosei],
+        ['AEDの使用と心肺蘇生（傷病者の反応がない場合）（急性アルコール中毒も含む）', AED],
+        ['過呼吸（過換気症候群）の対処法', kakokyuu],
+    ]
+};
+
+
 const emergencySelection = {
     name: '一覧',
     type: 'select',
@@ -74,8 +90,12 @@ const emergencySelection = {
         ['EV故障発報', EVkosyouhappou],
         ['EV呼出発報', EVyobidashihappou],
         ['ESC緊急停止', ESCkinnkyuuteishi],
-        ['応急手当'],
+        ['応急手当', oukyuuteate],
         ['地震発生'],
         ['停電発生']
     ]
 };
+
+// ①<br/>②<br/>③<br/>④<br/>⑤<br/>⑥<br/>⑦<br/>⑧
+// <br/>
+// <span class="strong-red"></span>
