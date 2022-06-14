@@ -80,6 +80,17 @@ const oukyuuteate = {
 };
 
 
+const zishinnhassei = {
+    name: '地震発生',
+    type: 'select',
+    flow: [
+        ['速報なしで、震度2以下の場合', sokuhouNashiUnder2],
+        ['速報なしで、震度3以上の場合', sokuhouNashiOver3],
+        ['緊急地震速報受信', kinnkyuuzishinnsokuhoujushin]
+    ]
+};
+
+
 const emergencySelection = {
     name: '一覧',
     type: 'select',
@@ -91,7 +102,7 @@ const emergencySelection = {
         ['EV呼出発報', EVyobidashihappou],
         ['ESC緊急停止', ESCkinnkyuuteishi],
         ['応急手当', oukyuuteate],
-        ['地震発生'],
+        ['地震発生', zishinnhassei],
         ['停電発生']
     ]
 };
