@@ -91,6 +91,16 @@ const zishinnhassei = {
 };
 
 
+const teidennhassei = {
+    name: '停電発生',
+    type: 'select',
+    flow: [
+        ['瞬時停電（照明等数秒で復電）の場合', syunnziTeidenn],
+        ['完全停電（落雷・東電事故等を原因とする）の場合', kanzennTeidenn]
+    ]
+};
+
+
 const emergencySelection = {
     name: '一覧',
     type: 'select',
@@ -103,7 +113,7 @@ const emergencySelection = {
         ['ESC緊急停止', ESCkinnkyuuteishi],
         ['応急手当', oukyuuteate],
         ['地震発生', zishinnhassei],
-        ['停電発生']
+        ['停電発生', teidennhassei]
     ]
 };
 
