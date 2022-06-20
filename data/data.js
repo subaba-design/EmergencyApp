@@ -55,7 +55,7 @@ const EVyobidashihappou = {
 
 
 const ESCkinnkyuuteishi = {
-    name: 'EV呼出発報',
+    name: 'ESC緊急停止',
     type: 'select',
     flow: [
         ['防災内で発報した場合', bousainaihappouESCteishiFlow],
