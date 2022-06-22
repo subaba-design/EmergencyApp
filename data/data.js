@@ -108,7 +108,7 @@ const hi_kasai = {
         ['火災報知器発報（非火災）', kasaihouchiki_hi_kasai],
         ['煙感知機作動（非火災）', kemurikanchiki_hi_kasai],
         ['排煙口作動（非火災）', haikikou_hi_kasai],
-        ['防火戸作動（非火災）', ],
+        ['防火戸作動（非火災）', boukado_hi_kasai],
         ['防火シャッター降下（非火災）', ]
     ]
 };
