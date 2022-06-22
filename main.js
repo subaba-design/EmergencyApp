@@ -115,7 +115,7 @@ const quizStart = (obj) => {
     console.log('クイズスタート！');
     console.log('quizStatus.quizData? : ', quizStatus.quizData);
 
-    subTitleElement.textContent = 'クイズ：' + obj.name;
+    subTitleElement.textContent = 'クイズ：' + obj.firstAttention;
     partitionElement.hidden = false;
     quizAction();
 };
