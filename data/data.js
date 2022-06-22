@@ -101,6 +101,19 @@ const teidennhassei = {
 };
 
 
+const hi_kasai = {
+    name: '防災監視盤発報（非火災）',
+    type: 'select',
+    flow: [
+        ['火災報知器発報（非火災）', kasaihouchiki_hi_kasai],
+        ['煙感知機作動（非火災）', ],
+        ['排煙口作動（非火災）', ],
+        ['防火戸作動（非火災）', ],
+        ['防火シャッター降下（非火災）', ]
+    ]
+};
+
+
 const emergencySelection = {
     name: '一覧',
     type: 'select',
@@ -113,7 +126,8 @@ const emergencySelection = {
         ['ESC緊急停止', ESCkinnkyuuteishi],
         ['応急手当', oukyuuteate],
         ['地震発生', zishinnhassei],
-        ['停電発生', teidennhassei]
+        ['停電発生', teidennhassei],
+        ['防災監視盤発報（非火災）', hi_kasai]
     ]
 };
 
