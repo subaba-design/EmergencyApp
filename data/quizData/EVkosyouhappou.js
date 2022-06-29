@@ -20,12 +20,6 @@ const bousainaihappouEVkosyouFlow = {
 const EVkosyouGenchikyuukouFlow = {
     name: '現地急行の場合',
     type: 'quiz',
-    flow: [
-        ['まず現地に着いたら？', '無線「現着、確認に入ります」<span class="strong-red">傷病者の有無を確認</span>「現地ケガ人いません」'],
-        ['状況を確認したら？<br/>（例：扉が開いたり閉まったりを繰り返している。扉が閉まらない。など）', '<span class="strong-red">状況を詳細に報告</span>、無線「（報告）」'],
-        ['異常があった場合は？<br/>（例：扉が開いたり閉まったりを繰り返している。扉が閉まらない。など）', '無線「設備チーム現着し対応に入っていますので警備立哨対応に入ります」'],
-        ['閉じ込め事案だった場合は？', '防災センター本部の指示に従い行動する'],
-        ['傷病者がいた場合は？', '無線「傷病者がおられます！確認に入ります！」<br/><span class="strong-red">傷病者対応に移行</span>']
-    ],
+    flow: EVyobidashiOutouNashiGenchikyuukouFlow.flow,
     firstAttention: 'EV故障発報！現地急行！'
 };
